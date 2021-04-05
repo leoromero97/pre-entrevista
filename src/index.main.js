@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Onboarding from './screens/Onboarding';
+import Cover from './screens/Onboarding/Cover';
 import MedicineSelector from './components/quiero-pedir/screens/medicine-selector';
 import Tablet from './components/quiero-pedir/screens/tablet';
 import FoundationsSelector from './components/quiero-pedir/screens/foundations-selector';
@@ -15,6 +15,7 @@ import FoundationsSelectorDonar from './components/quiero-donar/screens/foundati
 import ScannerDonar from './components/quiero-donar/screens/scanner';
 import CamaraDonar from './components/quiero-donar/screens/camara';
 import ConfirmationDonar from './components/quiero-donar/screens/confirmation';
+import Presentation from './screens/Onboarding/Presentation';
 
 class Main extends React.Component {
   state = {
@@ -34,7 +35,8 @@ class Main extends React.Component {
     return (
       <main>
         <Switch>
-          <Route exact path="/" component={Onboarding} />
+          <Route exact path="/" component={Cover} />
+          <Route exact path="/presentation" component={Presentation} />
           <Route exact path="/medicine-selector" render={(props) => <MedicineSelector{...props} medicamentos={this.medicamentos} />} />
           <Route exact path="/tablet" component={Tablet} />
           <Route exact path="/foundations-selector" render={(props) => <FoundationsSelector{...props} fundacion={this.fundacion} />} />
