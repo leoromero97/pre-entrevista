@@ -1,0 +1,43 @@
+@import '../../../../../../../styles/main.scss';
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+  .slider {
+    appearance: none;
+    background-color: #EFEFEF;
+    border-radius: 6px;
+    overflow: hidden;
+    outline: none;
+    width: 80%;
+    margin-left: 4vh;
+    margin-top: 32px;
+    height: 6px;
+  }
+
+  .slider::-webkit-slider-runnable-track {
+    appearance: none;
+    border-radius: 6px;
+    color: $color-blue;
+    height: 6px;
+    margin-top: -1px;
+    position: relative;
+  }
+
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    background: $color-blue;
+    border-radius: 20px;
+    box-shadow: -200px 0 0 200px $color-blue;
+    height: 6px;
+    width: 6px;
+  }
+
+  output {
+    border: 2px solid $color-blue;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    padding: .4em .6em;
+    border-radius: 3px;
+    background: transparent;
+  }
+}

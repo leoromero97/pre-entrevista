@@ -1,0 +1,36 @@
+@import '../../styles/main.scss';
+
+.container {
+  background-color: $gable-green;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vectorSuperior {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.title {
+  align-self: center;
+  color: $spring-green;
+  font-size: $title;
+  font-weight: 600;
+}
+
+.vectorInferior {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media all and (min-width: 467px) {
+  .title {
+    font-size: $title-web;
+  }
+}

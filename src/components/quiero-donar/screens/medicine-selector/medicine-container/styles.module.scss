@@ -1,0 +1,40 @@
+@import '../../../../../styles/main.scss';
+
+.contCards {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(300px);
+  margin-bottom: 40px;
+}
+
+.titleContainer {
+  transform: translateY(-6px);
+  font-size: 18px;
+  color: $color-title;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 26%;
+}
+
+@media all and (max-width: 640px) {
+
+  .titleContainer {
+    transform: translateY(0px);
+    font-size: 14px;
+    margin-left: 10%;
+  }
+
+  .contCards {
+    width: 90%;
+    height: 400px;
+    align-items: center;
+    transform: translateX(0px);
+    margin-top: 60px;
+  }
+}

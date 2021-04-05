@@ -1,0 +1,222 @@
+@import '../../../../styles/main.scss';
+
+.containerEnd {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $color-white;
+  background-color: $color-blue;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+  width: 100%;
+  height: 10%;
+  background-color: $text-button-color;
+  display: flex;
+  justify-content: space-between;
+  visibility: hidden;
+}
+
+.closeBlue {
+  width: 70%;
+  margin-top: 10px;
+  height: 60px;
+}
+
+.buttonClose {
+  background-color: $text-button-color;
+  border: 0;
+  margin: 0;
+  margin-left: 2vh;
+  width: 80px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBlue {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.containerText {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  align-items: center;
+}
+
+.title {
+  color: $color-text-end;
+  font-size: 54px;
+  margin-top: 6vh;
+  margin-left: 14%;
+  font-style: normal;
+  font-weight: bold;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.text {
+  width: 70%;
+  line-height: 26px;
+  color: $text-button-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: $color-text-end;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-left: 14%;
+  width: 100%;
+  height: 60%;
+}
+
+.footer {
+  background-color: $color-blue;
+  width: 90%;
+  height: 300%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  height: 2px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  color: $color-blue;
+  height: 20px;
+}
+
+.buttonEnd {
+  background-color: $text-button-color;
+  border-radius: 16px;
+  width: 270px;
+  height: 70px;
+  transition: all 0.1s;
+  margin-top: 180px;
+
+  &:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+  }
+}
+
+.hrFooterEnd {
+  visibility: hidden;
+  height: 1px;
+}
+
+.textFooter {
+  visibility: hidden;
+  color: $text-button-color;
+  height: 30px;
+  line-height: 14px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media all and (max-width: 760px) {
+
+  .containerEnd {
+    height: 840px;
+  }
+
+  .nav {
+    height: 100px;
+    visibility: visible;
+  }
+
+  .iconBack {
+    width: 70%;
+  }
+
+  .iconLogo {
+    width: 30%;
+    margin-left: 46%;
+  }
+
+  .containerText {
+    height: 100%;
+    width: 80%;
+    line-height: 6px;
+    margin-bottom: 30%;
+  }
+
+  .title {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .text {
+    font-size: 16px;
+    width: 80%;
+    line-height: 18px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    width: 80%;
+    line-height: 20px;
+    margin-left: 10%;
+  }
+
+  .footer {
+    visibility: visible;
+    margin-top: -100px;
+    height: 120%;
+  }
+
+  .buttonEnd {
+    width: 250px;
+    height: 60px;
+    transition: all 0.1s;
+    align-self: center;
+    margin-top: 0;
+    transform: translateY(8px);
+    margin-top: 32px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .hrFooterEnd {
+    visibility: visible;
+    transform: translateY(70px);
+    width: 80%;
+    color: $color-text-end;
+    background-color: $color-text-end;
+  }
+
+  .textFooter {
+    visibility: visible;
+    transform: translateY(80px);
+    font-size: 8px;
+  }
+}

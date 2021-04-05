@@ -1,0 +1,150 @@
+@import '../../../../../../styles/main.scss';
+
+.card {
+  width: 460px;
+  height: 600px;
+  border: solid 4px;
+  border-color: $border-target;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 60px;
+  margin-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  color: $black-color;
+}
+
+.hr {
+  display: block;
+  margin-bottom: 8px;
+  background-color: $hr-color;
+  opacity: 0.3;
+  height: 1px;
+  width: 80%;
+}
+
+.imgPastilla {
+  width: 70px;
+  height: 36px;
+  border-radius: 70px;
+  margin-top: 4px;
+  margin-left: 20vh;
+}
+
+.conposition {
+  height: 160px;
+  margin-left: 4vh;
+  margin-top: 26px;
+}
+
+.textDates {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.subtitleTablet {
+  font-size: 22px;
+  font-weight: bold;
+  color: $black-color;
+}
+
+.alert {
+  background: #dfdddd;
+  border-radius: 10px;
+  margin-top: 4vh;
+  margin-left: 4vh;
+  padding-left: 20px;
+  width: 74%;
+  height: 100px;
+  display: flex;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: normal;
+  color: $black-color;
+}
+
+.condition {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 8vh;
+  height: 60px;
+}
+
+u {
+  font-weight: normal;
+  color: $black-color;
+  font-size: 16px;
+}
+
+.radio {
+  transform: scale(2);
+  padding: 60px;
+  margin-right: 20px;
+}
+
+@media all and (max-width: 760px) {
+
+  .card {
+    width: 300px;
+    height: 520px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .hr {
+    margin-bottom: 6px;
+  }
+
+  .imgPastilla {
+    width: 50px;
+    height: 26px;
+    margin-left: 14vh;
+  }
+
+  .conposition {
+    height: 150px;
+  }
+
+  .subtitleTablet {
+    font-size: 18px;
+  }
+
+  .alert {
+    background: #fffbfb;
+
+    padding-left: 10px;
+    height: 60px;
+    font-size: 12px;
+  }
+
+  .condition {
+    font-size: 12px;
+    margin-left: 2vh;
+    width: 100%;
+  }
+
+  .radio {
+    transform: scale(2);
+    padding: 40px;
+    margin-right: 12px;
+  }
+}

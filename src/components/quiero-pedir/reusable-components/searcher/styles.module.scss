@@ -1,0 +1,87 @@
+@import '../../../../styles/main.scss';
+
+.containerSearcher {
+  width: 50%;
+  height: 68px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $hr-color;
+  border: solid 2px $hr-color;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.containerIcon {
+  width: 6%;
+  height: 100%;
+  background: $hr-color;
+  border: solid 2px $hr-color;
+  border-radius: 25px 25px 25px 25px;
+  outline: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 22px;
+  margin-right: 6px;
+}
+
+.containerInput {
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  border-radius: 15px 15px 15px 15px;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 80%;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  background-color: $hr-color;
+  border: solid 2px $hr-color;
+  border-radius: 15px 15px 15px 15px;
+  font-size: large;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  outline: none;
+  padding-inline-start: 20px;
+}
+
+@media all and (max-width: 850px) {
+  .containerSearcher {
+    width: 80%;
+    margin-top: 4%;
+  }
+
+  .containerIcon {
+    width: 6%;
+    height: 100%;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+  }
+
+  .containerInput {
+    width: 76%;
+    margin-left: 20px;
+  }
+
+  .input {
+    width: 100%;
+    height: 50px;
+    font-size: 80%;
+  }
+}
