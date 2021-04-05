@@ -1,0 +1,19 @@
+@import '../../../../styles/main.scss';
+
+.button {
+  background-color: $pink-color;
+  color: white;
+  font-size: 22px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 20px;
+  width: 260px;
+  height: 64px;
+  transition: all 0.1s;
+
+  &:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+  }
+}

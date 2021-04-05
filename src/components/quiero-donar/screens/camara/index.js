@@ -1,0 +1,36 @@
+import React from 'react';
+import styles from './styles.module.scss';
+import camara from '../../../../assets/camara.png';
+import { Link } from 'react-router-dom';
+import back from '../../../../assets/back.png';
+import logo from '../../../../assets/logo.png';
+
+class CamaraDonar extends React.Component {
+  render() {
+    return (
+      <div className={styles.containerCamara}>
+        <nav className={styles.topbar}>
+          <button className={styles.button}>
+            <Link to="/scanner-donar">
+              <img src={back} className={styles.iconBack} alt="atrás" />
+            </Link>
+          </button>
+          <div>
+            <img src={logo} className={styles.iconLogo} alt="logo" />
+          </div>
+        </nav>
+        <div className={styles.cam}>
+          <Link to="/confirmation-donar">
+            <img src={camara} alt='camara' className={styles.iconCamara} />
+          </Link>
+        </div>
+        <footer className={styles.footer}>
+          <hr className={styles.hrFoot} />
+          <p className={styles.textFooter}>Copyright © 2019 YOSOY. Todos los derechos reservados.</p>
+        </footer>
+      </div>
+    );
+  }
+}
+
+export default CamaraDonar;
