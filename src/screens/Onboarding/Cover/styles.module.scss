@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import '../../../styles/main.scss';
 
 .container {
   background-color: $gable-green;
@@ -17,10 +17,10 @@
 }
 
 .title {
-  align-self: center;
   color: $spring-green;
   font-size: $title;
   font-weight: 600;
+  text-align: center;
 }
 
 .vectorInferior {

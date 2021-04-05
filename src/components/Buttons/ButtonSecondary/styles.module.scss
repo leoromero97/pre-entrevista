@@ -1,17 +1,16 @@
 @import '../../../styles/main.scss';
 
 .button {
-  background-color: $spring-green;
+  background-color: $foam;
   border-radius: 20px;
   border-width: 0;
   width: 200px;
   height: 60px;
-  margin-bottom: 18px;
   transition: all 0.1s;
 
   &:hover {
     transform: translateY(-4px);
-    background-color: $jade;
+    background-color: $athens-gray;
     cursor: pointer;
   }
 }
@@ -24,9 +23,8 @@
 
 @media all and (min-width: 467px) {
   .button {
-    height: 70px;
-    margin-bottom: 26px;
     width: 280px;
+    height: 70px;
   }
 
   .buttonText {
