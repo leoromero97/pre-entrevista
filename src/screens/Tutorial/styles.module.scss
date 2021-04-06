@@ -1,0 +1,29 @@
+@import '../../styles/main.scss';
+
+.container {
+  background-color: $gable-green;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: $foam;
+  font-size: $x-big;
+  font-weight: 600;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+
+@media all and (min-width: 467px) {
+  .title {
+    font-size: $subtitle;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 90%;
+  }
+}
