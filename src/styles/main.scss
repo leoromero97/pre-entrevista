@@ -12,6 +12,7 @@ $black-color: #505767;
 // NEW COLORS PRE ENTREVISTA
 $athens-gray: #E6E8EC;
 $blue-diane: #234454;
+$blue-diane-transparent: #23445454;
 $electric-violet: #AB3DFD;
 $electric-violet-dark: #9C19FF;
 $foam: #F1FBFE;
@@ -24,9 +25,12 @@ $title: 40px;
 $subtitle: 36px;
 $x-big: 28px;
 $big: 20px;
+$medium: 18px;
 $small: 16px;
 
 body {
+  background-color: $gable-green;
   margin: 0;
+  padding: 0 2%;
   font-family: 'Spartan', sans-serif;
 }
