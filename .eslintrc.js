@@ -3,6 +3,22 @@ module.exports = {
   settings: {
     'react': {
       'version': 'detect'
+    },
+    'import/resolver': {
+      'babel-module': {
+        root: ['./src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        alias: {
+          '@components': './src/app/components',
+          '@screens': './src/app/screens',
+          '@constants': './src/constants',
+          '@utils': './src/utils',
+          '@config': './src/config',
+          '@hooks': './src/hooks',
+          '@scss': './src/scss',
+          '@public': './public'
+        }
+      }
     }
   },
   rules: {
