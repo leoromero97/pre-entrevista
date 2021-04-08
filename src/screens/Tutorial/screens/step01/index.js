@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import emLaugh from '../../../../assets/emojis/em_laugh.png';
 import stStepper from '../../../../assets/steppers/st_stepper-01.png';
 import icClose from '../../../../assets/icons/ic_close.png';
+import ButtonSecondary from '../../../../components/Buttons/ButtonSecondary';
 import MainCard from '../../../../components/Cards/MainCard';
 import styles from './styles.module.scss';
 
@@ -36,7 +37,10 @@ function TutorialStep01() {
           isBloqued
           text="Completa el Nivel 2 para desbloquear este nivel."
         />
-       </div> 
+       </div>
+       <Link to="/tutorial-step-02" className={styles.containerButton}>
+          <ButtonSecondary text="Siguiente" />
+        </Link>
     </div>
   )
 }

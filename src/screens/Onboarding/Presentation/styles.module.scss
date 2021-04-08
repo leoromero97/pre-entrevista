@@ -24,6 +24,7 @@
 .text {
   color: $foam;
   font-size: $small;
+  line-height: $x-big;
   margin-bottom: 30px;
   width: 80%;
 }
@@ -36,6 +37,7 @@
   
   .text {
     font-size: $big;
+    line-height: $subtitle;
     margin-bottom: 60px;
     width: 64%;
   }

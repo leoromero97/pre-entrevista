@@ -1,0 +1,62 @@
+@import '../../styles/main.scss';
+
+.container {
+  background-color: transparent;
+  border-color: $foam;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  padding: 10px 10px 0px 10px;
+  width: 90%;
+}
+
+.question {
+  color: $foam;
+  font-size: $medium;
+  font-weight: 700;
+}
+
+.subContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.iconAudio {
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+}
+
+.label {
+  color: $foam;
+  font-size: $medium;
+  font-weight: 500;
+}
+
+.iconFavorite {
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+}
+
+@media all and (min-width: 467px) {
+  .container {
+    margin-bottom: 44px;
+    width: 440px;
+  }
+}
+
+@media all and (min-width: 678px) {
+  .container {
+    margin-bottom: 50px;
+    width: 600px;
+  }
+
+  .question, .label {
+    font-size: $big;
+    line-height: $subtitle;
+  }
+}
