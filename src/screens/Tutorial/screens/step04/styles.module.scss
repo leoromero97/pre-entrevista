@@ -1,0 +1,152 @@
+@import '../../../../styles/main.scss';
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.subtitle {
+  color: $spring-green;
+  font-size: $medium;
+  font-weight: 700;
+}
+
+.stepper {
+  height: 40px;
+  width: 40px;
+}
+
+.iconClose,
+.iconSettings {
+  height: 34px;
+  width: 34px;
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  width: 30px;
+}
+
+.line {
+  background-color: $spring-green;
+  border-radius: 12px;
+  color: $spring-green;
+  cursor: pointer;
+  height: 4px;
+  margin-bottom: 8px;
+  width: 30px;
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+}
+
+.borderAvatar {
+  align-items: center;
+  border-color: $spring-green;
+  border-radius: 50%;
+  border-style: solid;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  opacity: 0.2;
+  width: 70px;
+}
+
+.title {
+  color: $foam;
+  font-size: $x-big;
+  font-weight: 600;
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.textTutorial {
+  color: $spring-green;
+  font-size: $medium;
+  font-weight: 500;
+  line-height: $x-big;
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.containerDataUser {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.2;
+  width: 100%;
+  z-index: -99;
+}
+
+.containerButton {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  text-decoration: none;
+  top: 80%;
+  right: 24%;
+}
+
+@media all and (min-width: 467px) {
+  .title {
+    font-size: $subtitle;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .textTutorial {
+    font-size: $x-big;
+    line-height: $subtitle;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 678px) {
+  .subtitle {
+    font-size: $big;
+  }
+
+  .stepper {
+    height: 60px;
+    width: 60px;
+  }
+
+  .line {
+    margin-bottom: 12px;
+    width: 50px;
+  }
+
+  .iconClose,
+  .iconSettings {
+    height: 54px;
+    width: 54px;
+  }
+
+  .containerButton {
+    right: 10%;
+  }
+}
