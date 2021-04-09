@@ -7,28 +7,10 @@ import Tutorial from './screens/Tutorial';
 import TutorialStep01 from './screens/Tutorial/screens/step01';
 import TutorialStep02 from './screens/Tutorial/screens/step02';
 import TutorialStep03 from './screens/Tutorial/screens/step03';
-import MedicineSelector from './components/quiero-pedir/screens/medicine-selector';
-import Tablet from './components/quiero-pedir/screens/tablet';
-import FoundationsSelector from './components/quiero-pedir/screens/foundations-selector';
-import Scanner from './components/quiero-pedir/screens/scanner';
-import Camara from './components/quiero-pedir/screens/camara';
-import Confirmation from './components/quiero-pedir/screens/confirmation';
+import TutorialStep04 from './screens/Tutorial/screens/step04';
 
 class Main extends React.Component {
-  state = {
-    idMedicamento: 0,
-    cant: 0,
-    idFundacion: 0,
-    codigo: 0
-  }
-  medicamentos = (id) => {
-    this.setState({ idMedicamento: id });
-  }
-  fundacion = (id) => {
-    this.setState({ idFundacion: id })
-  }
   render() {
-    console.log(this.state);
     return (
       <main>
         <Switch>
@@ -38,12 +20,7 @@ class Main extends React.Component {
           <Route exact path="/tutorial-step-01" component={TutorialStep01} />
           <Route extact path="/tutorial-step-02" component={TutorialStep02} />
           <Route extact path="/tutorial-step-03" component={TutorialStep03} />
-          <Route exact path="/medicine-selector" render={(props) => <MedicineSelector{...props} medicamentos={this.medicamentos} />} />
-          <Route exact path="/tablet" component={Tablet} />
-          <Route exact path="/foundations-selector" render={(props) => <FoundationsSelector{...props} fundacion={this.fundacion} />} />
-          <Route exact path="/scanner" component={Scanner} />
-          <Route exact path="/camara" component={Camara} />
-          <Route exact path="/confirmation" component={Confirmation} />
+          <Route extact path="/tutorial-step-04" component={TutorialStep04} />
         </Switch>
       </main>
     );

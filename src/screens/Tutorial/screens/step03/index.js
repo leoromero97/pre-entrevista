@@ -40,7 +40,7 @@ function TutorialStep03() {
           text="Completa el Nivel 2 para desbloquear este nivel."
         />
        </div>
-       <Link to="/" className={styles.containerButton}>
+       <Link to="/tutorial-step-04" className={styles.containerButton}>
           <ButtonSecondary text="Siguiente" />
         </Link>
     </div>
