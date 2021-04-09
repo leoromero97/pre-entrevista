@@ -1,0 +1,125 @@
+@import '../../../../styles/main.scss';
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.subtitle {
+  color: $spring-green;
+  font-size: $medium;
+  font-weight: 700;
+}
+
+.stepper {
+  height: 40px;
+  width: 40px;
+}
+
+.iconClose,
+.iconSettings {
+  height: 34px;
+  width: 34px;
+}
+
+.iconSettings {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.title {
+  color: $foam;
+  font-size: $x-big;
+  font-weight: 600;
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.containerField {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  opacity: 0.2;
+  width: 100%;
+  z-index: -99;
+}
+
+.textTutorial {
+  color: $spring-green;
+  font-size: $medium;
+  font-weight: 500;
+  line-height: $x-big;
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.containerCards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.2;
+  width: 100%;
+  z-index: -99;
+}
+
+.containerButton {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  text-decoration: none;
+  top: 80%;
+  right: 24%;
+}
+
+@media all and (min-width: 467px) {
+  .title {
+    font-size: $subtitle;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .textTutorial {
+    font-size: $x-big;
+    line-height: $subtitle;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 678px) {
+  .subtitle {
+    font-size: $big;
+  }
+
+  .stepper {
+    height: 60px;
+    width: 60px;
+  }
+
+  .iconClose,
+  .iconSettings {
+    height: 54px;
+    width: 54px;
+  }
+
+  .containerButton {
+    right: 10%;
+  }
+}

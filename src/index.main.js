@@ -6,6 +6,7 @@ import Presentation from './screens/Onboarding/Presentation';
 import Tutorial from './screens/Tutorial';
 import TutorialStep01 from './screens/Tutorial/screens/step01';
 import TutorialStep02 from './screens/Tutorial/screens/step02';
+import TutorialStep03 from './screens/Tutorial/screens/step03';
 import MedicineSelector from './components/quiero-pedir/screens/medicine-selector';
 import Tablet from './components/quiero-pedir/screens/tablet';
 import FoundationsSelector from './components/quiero-pedir/screens/foundations-selector';
@@ -36,6 +37,7 @@ class Main extends React.Component {
           <Route exact path="/tutorial" component={Tutorial} />
           <Route exact path="/tutorial-step-01" component={TutorialStep01} />
           <Route extact path="/tutorial-step-02" component={TutorialStep02} />
+          <Route extact path="/tutorial-step-03" component={TutorialStep03} />
           <Route exact path="/medicine-selector" render={(props) => <MedicineSelector{...props} medicamentos={this.medicamentos} />} />
           <Route exact path="/tablet" component={Tablet} />
           <Route exact path="/foundations-selector" render={(props) => <FoundationsSelector{...props} fundacion={this.fundacion} />} />
