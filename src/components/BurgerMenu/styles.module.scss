@@ -1,0 +1,42 @@
+@import '../../styles/main.scss';
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.label {
+  color: $foam;
+  font-size: $medium;
+  font-weight: 500;
+  line-height: $x-big;
+}
+
+.icon {
+  height: 34px;
+  margin-right: 20px;
+  width: 34px;
+}
+
+@media all and (min-width: 467px) {
+  .container {
+    margin-bottom: 44px;
+    width: 440px;
+  }
+}
+
+@media all and (min-width: 678px) {
+  .container {
+    margin-bottom: 50px;
+    width: 600px;
+  }
+
+  .label {
+    font-size: $big;
+    line-height: $subtitle;
+  }
+}
