@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import stStepper from '../../../../assets/steppers/st_stepper-02.png';
 import icClose from '../../../../assets/icons/ic_close.png';
 import ButtonSecondary from '../../../../components/Buttons/ButtonSecondary';
-import styles from './styles.module.scss';
 import FieldQuestion from '../../../../components/FieldQuestion';
+import styles from './styles.module.scss';
 
 function TutorialStep02() {
   return (

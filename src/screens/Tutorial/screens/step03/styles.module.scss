@@ -35,9 +35,40 @@
   width: 34px;
 }
 
-.iconSettings {
-  align-self: flex-start;
+.burger {
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  width: 30px;
+}
+
+.line {
+  background-color: $spring-green;
+  border-radius: 12px;
+  color: $spring-green;
+  cursor: pointer;
+  height: 4px;
+  margin-bottom: 8px;
+  width: 30px;
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+}
+
+.borderAvatar {
+  align-items: center;
+  border-color: $spring-green;
+  border-radius: 50%;
+  border-style: solid;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  opacity: 0.2;
+  width: 70px;
 }
 
 .title {
@@ -46,15 +77,6 @@
   font-weight: 600;
   margin-bottom: 40px;
   width: 90%;
-}
-
-.containerField {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  opacity: 0.2;
-  width: 100%;
-  z-index: -99;
 }
 
 .textTutorial {
@@ -66,7 +88,7 @@
   width: 90%;
 }
 
-.containerCards {
+.containerDataUser {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -84,6 +106,22 @@
   text-decoration: none;
   top: 80%;
   right: 24%;
+}
+
+.containerProgress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: $spring-green;
+  width: 80%;
+  height: 200px;
+}
+
+.progress {
+  background-color: $spring-green;
+  color: $spring-green;
+  border: 3px solid white;
 }
 
 @media all and (min-width: 467px) {
@@ -111,6 +149,11 @@
   .stepper {
     height: 60px;
     width: 60px;
+  }
+
+  .line {
+    margin-bottom: 12px;
+    width: 50px;
   }
 
   .iconClose,

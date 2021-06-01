@@ -8,6 +8,7 @@ import TutorialStep01 from './screens/Tutorial/screens/step01';
 import TutorialStep02 from './screens/Tutorial/screens/step02';
 import TutorialStep03 from './screens/Tutorial/screens/step03';
 import TutorialStep04 from './screens/Tutorial/screens/step04';
+import TutorialStep05 from './screens/Tutorial/screens/step05';
 
 class Main extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class Main extends React.Component {
           <Route extact path="/tutorial-step-02" component={TutorialStep02} />
           <Route extact path="/tutorial-step-03" component={TutorialStep03} />
           <Route extact path="/tutorial-step-04" component={TutorialStep04} />
+          <Route extact path="/tutorial-step-05" component={TutorialStep05} />
         </Switch>
       </main>
     );
