@@ -1,0 +1,44 @@
+@import '../../../styles/main.scss';
+
+.container {
+  background-color: $blue-diane-transparent;
+  border-color: $foam;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  padding: 10px 10px 0px 10px;
+  transition: all 0.1s;
+  width: 90%;
+
+  &:hover {
+    background-color: $blue-diane;
+    cursor: pointer;
+  }
+}
+
+.buttonText {
+  color: $foam;
+  font-size: $medium;
+  font-weight: 500;
+  line-height: $x-big;
+}
+
+@media all and (min-width: 467px) {
+  .container {
+    margin-bottom: 44px;
+    width: 440px;
+  }
+}
+
+@media all and (min-width: 678px) {
+  .container {
+    margin-bottom: 50px;
+    width: 600px;
+  }
+
+  .buttonText {
+    font-size: $big;
+    line-height: $subtitle;
+  }
+}

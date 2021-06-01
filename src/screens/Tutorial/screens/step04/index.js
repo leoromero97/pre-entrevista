@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import emLaugh from '../../../../assets/emojis/em_laugh.png';
-import stStepper from '../../../../assets/steppers/st_stepper-04.png';
+import stStepper from '../../../../assets/steppers/st_stepper-03.png';
 import icClose from '../../../../assets/icons/ic_close.png';
-import Label from '../../../../components/Label'
+import icSettings from '../../../../assets/icons/ic_settings.png';
 import ButtonSecondary from '../../../../components/Buttons/ButtonSecondary';
+import MainCard from '../../../../components/Cards/MainCard';
 import styles from './styles.module.scss';
-import dataUserTutorial from './constants';
 
 function TutorialStep04() {
   return (
@@ -18,24 +18,29 @@ function TutorialStep04() {
           <img src={icClose} alt="cerrar" className={styles.iconClose} />
         </Link>
       </div>
-      <h1 className={styles.title}>Mi perfil</h1>
-      <div className={styles.header}>
-        <div className={styles.burger}>
-          <span className={styles.line}></span>
-          <span className={styles.line}></span>
-          <span className={styles.line}></span>
-        </div>
-        <span className={styles.borderAvatar}>
-          <img src={emLaugh} alt="Avatar" className={styles.avatar} />
-        </span>
-      </div>
-      <p className={styles.textTutorial}>En el menú que está a la izquierda vas a poder elegir las opciones para editar el perfil, y cerrar la sesión</p>
-      <div className={styles.containerDataUser}>
-       {dataUserTutorial.map(({ ...item}) =>(
-         <Label key={item.id} icon={item.icon} label={item.label}/>
-       ))}
+      <h1 className={styles.title}>Configuración</h1>
+      <img src={icSettings} alt="Configuración" className={styles.iconSettings} />
+      <p className={styles.textTutorial}>En el icono del engranaje se encuentra la configuración de la aplicación</p>
+      <div className={styles.containerCards}>
+        <MainCard 
+          level="Nivel 1"
+          text="Se desbloqueo el siguiente nivel, completalo y sigue avanzando !"
+          isTextTwo
+          textTwo="Buena suerte"
+          emoji={emLaugh}
+        />
+        <MainCard 
+          level="Nivel 2"
+          isBloqued
+          text="Completa el Nivel 1 para desbloquear este nivel."
+        />
+        <MainCard 
+          level="Nivel 3"
+          isBloqued
+          text="Completa el Nivel 2 para desbloquear este nivel."
+        />
        </div>
-       <Link to="/" className={styles.containerButton}>
+       <Link to="/tutorial-step-05" className={styles.containerButton}>
           <ButtonSecondary text="Siguiente" />
         </Link>
     </div>
